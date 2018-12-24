@@ -2,9 +2,10 @@
 from flask import Flask, render_template,request
 
 app = Flask(__name__)
+
 # Importing the libraries
-import numpy as np
 import pandas as pd
+import numpy as np
 
 # Importing the dataset
 dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter = '\t', quoting = 3)
