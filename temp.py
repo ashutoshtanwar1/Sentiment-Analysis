@@ -1,5 +1,7 @@
 # Natural Language Processing
+from flask import Flask, render_template,request
 
+app = Flask(__name__)
 # Importing the libraries
 import numpy as np
 import pandas as pd
@@ -30,9 +32,7 @@ for i in range(0, 1000):
 #from sklearn.metrics import confusion_matrix
 #cm = confusion_matrix(y_test, y_pred)
 
-from flask import Flask, render_template,request
 
-app = Flask(__name__)
 p=0
 @app.route('/')
 @app.route('/submit',methods=["GET","POST"])
