@@ -80,9 +80,9 @@ def profile():
         y_pred = classifier.predict(X_test)
         
         if(y_pred==0):
-            return render_template("pro1.html")
+            return render_template("simple1.html")
         else:
-            return render_template("pro2.html")
+            return render_template("simple2.html")
     return render_template("simple.html")
 
 
