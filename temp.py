@@ -83,7 +83,7 @@ def profile():
             return render_template("pro1.html")
         else:
             return render_template("pro2.html")
-    return render_template("pro.html")
+    return render_template("resume.html")
 
 
 if __name__ == "__main__":
