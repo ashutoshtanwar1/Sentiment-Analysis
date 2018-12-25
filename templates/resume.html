@@ -9,15 +9,15 @@
     <title>Resume - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./Resume - Start Bootstrap Theme_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Resume - Start Bootstrap Theme_files/bootstrap.min.css" rel="stylesheet" >
 
     <!-- Custom fonts for this template -->
-    <link href="./Resume - Start Bootstrap Theme_files/css" rel="stylesheet">
-    <link href="./Resume - Start Bootstrap Theme_files/css(1)" rel="stylesheet">
-    <link href="./Resume - Start Bootstrap Theme_files/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css(1).css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='all.min.css') }}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./Resume - Start Bootstrap Theme_files/resume.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='resume.min.css') }}" rel="stylesheet">
 
   </head>
 
