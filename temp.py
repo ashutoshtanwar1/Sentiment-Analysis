@@ -41,7 +41,7 @@ def profile():
     
     if request.method == "POST":
         ashu= request.form.get("rev")
-        
+        ashu1= request.form.get("rev1")
         #Test Values
         
         
@@ -80,9 +80,9 @@ def profile():
         y_pred = classifier.predict(X_test)
         
         if(y_pred==0):
-            return render_template("simple1.html")
+            return render_template("simple1.html",name = ashu1)
         else:
-            return render_template("simple2.html")
+            return render_template("simple2.html",name = ashu1)
     return render_template("simple.html")
 
 

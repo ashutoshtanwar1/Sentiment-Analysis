@@ -66,9 +66,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://ashutoshtanwar.herokuapp.com/#about">ABOUT</a></li>
-        <li><a href="http://ashutoshtanwar.herokuapp.com/#review">REVIEW</a></li>
-        <li><a href="http://ashutoshtanwar.herokuapp.com/#cuisines">CUISINES</a></li>
+        <li><a href="http://ashutoshtanwar.herokuapp.com/#">ABOUT</a></li>
+        <li><a href="http://ashutoshtanwar.herokuapp.com/#">REVIEW</a></li>
+        <li><a href="http://ashutoshtanwar.herokuapp.com/#">CUISINES</a></li>
       </ul>
     </div>
   </div>
@@ -93,10 +93,25 @@ Cash, Cards and Meal Coupons accepted</p>
   <h3 class="margin">Write a Review</h3>
   <p>Help other foodies by sharing your review of Tanwar Restaurant</p>
 	<form action= "/submit" " method = "POST">
-        <input type="text" class="form-control" name="rev" placeholder="ENTER YOUR REVIEW" required>
-               
+    <div class="container">
+		<div class="row">
+			<div class="col">
+				<input type="text" class="form-control" name="rev1" placeholder="ENTER YOUR NAME" required>
+			</div>
+			<div class="col">
+				<input type="text" class="form-control" name="rev2" placeholder="ENTER YOUR E-MAIL" required>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<input type="text" class="form-control" name="rev" placeholder="ENTER YOUR REVIEW" required>
+			</div>		
+		</div>
+	</div>
         <button class="btn btn-primary mb-2" type="submit">Submit</button>
 	</form>
+	
+	<h3 class="margin">We are Sorry {{ name }}.</h3>
 	
 	<p>Please accept our sincere apologies for your disappointment at your recent stay at our restaurant.
 	I am extremely concerned to read your comments with regard to your overall experience at the restaurant
