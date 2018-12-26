@@ -51,7 +51,7 @@
   }
   </style>
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
@@ -62,20 +62,20 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">RESTAURANT</a>
+      <a class="navbar-brand" href="#myPage">RESTAURANT</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://ashutoshtanwar.herokuapp.com/#">ABOUT</a></li>
-        <li><a href="http://ashutoshtanwar.herokuapp.com/#">REVIEW</a></li>
-        <li><a href="http://ashutoshtanwar.herokuapp.com/#">CUISINES</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#review">REVIEW</a></li>
+        <li><a href="#cuisines">CUISINES</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
+<div id="about" class="container-fluid bg-1 text-center">
   <h3 class="margin">Tanwar Restaurant</h3>
   <img src="{{ url_for('static', filename='pic1.jpg') }}" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
   <h3>Cuisines</h3>
@@ -89,7 +89,7 @@ Cash, Cards and Meal Coupons accepted</p>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
+<div id="review" class="container-fluid bg-2 text-center">
   <h3 class="margin">Write a Review</h3>
   <p>Help other foodies by sharing your review of Tanwar Restaurant</p>
 	<form action= "/submit" " method = "POST">
@@ -122,7 +122,7 @@ Cash, Cards and Meal Coupons accepted</p>
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
+<div id="cuisines" class="container-fluid bg-3 text-center">    
   <h3 class="margin">Cuisines</h3><br>
   <div class="row">
     <div class="col-sm-4">
