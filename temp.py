@@ -36,7 +36,7 @@ for i in range(0, 1000):
 
 p=0
 @app.route('/')
-@app.route('/submit',methods=["GET","POST"])
+@app.route('/submit#review',methods=["GET","POST"])
 def profile():
     
     if request.method == "POST":
