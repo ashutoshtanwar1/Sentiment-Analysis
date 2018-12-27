@@ -79,9 +79,9 @@ def profile():
         # Predicting the Test set results
         y_pred = regressor.predict(X_test)
         
-        if(y_pred<3.7):
+        if(y_pred<0.37):
             return render_template("simple1.html",name = ashu1)
-        elif(y_pred>6.3):
+        elif(y_pred>0.63):
             return render_template("simple2.html",name = ashu1)
         else:
             return render_template("simple3.html",name = ashu1)
