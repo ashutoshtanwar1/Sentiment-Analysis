@@ -1,4 +1,4 @@
-# Sentiment-Analysis
+# Sentiment Analysis
 Sentiment Analysis: To determine, from a text corpus, whether the  sentiment towards any topic or product etc. is positive, negative, or neutral.
 
 
